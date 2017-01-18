@@ -2,6 +2,7 @@
 #include "BaseSocket.h"
 
 #define MIN_TIMER_DURATION	100	// 100 miliseconds
+#define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS 1
 
 CEventDispatch* CEventDispatch::m_pEventDispatch = NULL;
 

@@ -8,6 +8,7 @@
 #include "imconn.h"
 
 #define POLICY_FILE_NAME	"policy.xml"
+#define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS 1
 
 static char* g_policy_content = NULL;
 static uint32_t g_policy_len = 0;

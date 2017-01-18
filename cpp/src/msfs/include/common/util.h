@@ -24,8 +24,8 @@
 #endif
 
 #ifdef _WIN32
-#include <hash_map>
-using namespace stdext;
+#include <unordered_map>
+using namespace std;
 #else
 #include <ext/hash_map>
 using namespace __gnu_cxx;

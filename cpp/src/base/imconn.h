@@ -19,6 +19,8 @@
 #define MOBILE_CLIENT_TIMEOUT       30000 * 10
 #define READ_BUF_SIZE	2048
 
+#define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS 1
+
 class CImConn : public CRefObject
 {
 public:
@@ -53,9 +55,9 @@ protected:
 	uint64_t		m_last_recv_tick;
 };
 
-typedef hash_map<net_handle_t, CImConn*> ConnMap_t;
-typedef hash_map<uint32_t, CImConn*> UserMap_t;
-typedef hash_map<uint32_t, uint32_t> UserConnCntMap_t;
+typedef unordered_map<net_handle_t, CImConn*> ConnMap_t;
+typedef unordered_map<uint32_t, CImConn*> UserMap_t;
+typedef unordered_map<uint32_t, uint32_t> UserConnCntMap_t;
 
 void imconn_callback(void* callback_data, uint8_t msg, uint32_t handle, void* pParam);
 

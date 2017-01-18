@@ -6,6 +6,7 @@
  */
 
 #include "ImPduFile.h"
+#define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS 1
 
 CImPduClientFileLoginReq::CImPduClientFileLoginReq(uchar_t* buf, uint32_t len)
 {

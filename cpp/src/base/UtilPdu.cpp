@@ -10,6 +10,8 @@
 #include <string.h>
 #include <stdio.h>
 
+#define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS 1
+
 ///////////// CSimpleBuffer ////////////////
 CSimpleBuffer::CSimpleBuffer()
 {
@@ -301,7 +303,7 @@ void CByteStream::_WriteByte(void* buf, uint32_t len)
 char* idtourl(uint32_t id)
 {
 	static char buf[64];
-    sprintf(buf, "%d", id );
+    sprintf_s(buf, "%d", id );
 	return buf;
 }
 

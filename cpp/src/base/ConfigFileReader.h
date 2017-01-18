@@ -8,6 +8,8 @@
 #ifndef CONFIGFILEREADER_H_
 #define CONFIGFILEREADER_H_
 
+#define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS 1
+
 #include "util.h"
 
 class CConfigFileReader

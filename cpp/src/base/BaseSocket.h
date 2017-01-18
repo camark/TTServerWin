@@ -8,6 +8,8 @@
 #include "ostype.h"
 #include "util.h"
 
+
+
 enum
 {
 	SOCKET_STATE_IDLE,

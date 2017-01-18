@@ -14,6 +14,8 @@
 
 #include "ImPduServer.h"
 
+#define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS 1
+
 
 CImPdu::CImPdu()
 {

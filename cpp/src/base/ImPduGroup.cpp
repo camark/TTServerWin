@@ -6,6 +6,7 @@
  */
 
 #include "ImPduGroup.h"
+#define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS 1
 
 CImPduClientGroupListRequest::CImPduClientGroupListRequest(uchar_t* buf, uint32_t len)
 {

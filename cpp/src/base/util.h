@@ -19,8 +19,8 @@
 #endif
 
 #ifdef _WIN32
-#include <hash_map>
-using namespace stdext;
+#include <unordered_map>
+using namespace std;
 #else
 #include <ext/hash_map>
 using namespace __gnu_cxx;
@@ -28,6 +28,8 @@ using namespace __gnu_cxx;
 
 #define MAX_LOG_FILE_SIZE	0x4000000	// 64MB
 #define NOTUSED_ARG(v) ((void)v)		// used this to remove warning C4100, unreferenced parameter
+
+#define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS 1
 
 class CThread
 {

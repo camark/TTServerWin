@@ -7,6 +7,7 @@
  */
 
 #include "ImPduServer.h"
+#define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS 1
 
 ////// Business Server Packet //////
 CImPduStopReceivePacket::CImPduStopReceivePacket(uchar_t* buf, uint32_t len)

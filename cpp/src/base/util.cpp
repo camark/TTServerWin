@@ -1,5 +1,7 @@
 #include "util.h"
 
+#define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS 1
+
 CThread::CThread()
 {
 	m_thread_id = 0;

@@ -2,6 +2,8 @@
 #include "BaseSocket.h"
 #include "EventDispatch.h"
 
+#define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS 1
+
 int netlib_init()
 {
 	int ret = NETLIB_OK;

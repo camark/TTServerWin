@@ -10,6 +10,8 @@
 #include <stdlib.h>
 #include <ctime>
 
+#define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS 1
+
 CImPduHeartbeat::CImPduHeartbeat()
 {
 	m_pdu_header.command_id = IM_PDU_TYPE_HEARTBEAT;

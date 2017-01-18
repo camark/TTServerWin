@@ -15,7 +15,7 @@ typedef struct {
     RouteConnMap_t  	conns;
 } UserStat_t;
 
-typedef hash_map<uint32_t, UserStat_t> UserStatMap_t;
+typedef unordered_map<uint32_t, UserStat_t> UserStatMap_t;
 
 static ConnMap_t g_route_conn_map;
 static UserStatMap_t g_rs_user_map;

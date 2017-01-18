@@ -16,4 +16,6 @@
 #include "ImPduFile.h"
 #include "ImPduGroup.h"
 
+#define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS 1
+
 #endif /* IMPDU_H_ */
